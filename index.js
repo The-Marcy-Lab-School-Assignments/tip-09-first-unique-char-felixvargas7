@@ -12,7 +12,23 @@
  */
 
 const firstUniqChar = (s) => {
-
+    const frequency = {};
+    for (let i = 0; i < s.length; i++) {
+        const str = s[i];
+        if (frequency[str] === undefined) {
+            frequency[str] = 1
+        } else {
+            frequency[str] += 1
+        }
+        return frequency[str];
+    }
+    for (let i = 0; i < s.length; i++) {
+        const str = s[i];
+    }
+    if (frequency[str] === 1) {
+        return i;
+    }
+    return -1;
 };
 
 // Export the function for testing
